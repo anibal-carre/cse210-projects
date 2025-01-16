@@ -2,9 +2,11 @@ public class PromptGenerator
 {
     public List<string> _prompts;
 
-    public static string GetRandomPrompt(List<string> prompts, int num = 1)
+    public string GetRandomPrompt(List<string> prompts)
     {
-        string findPrompt = prompts[num];
+        Random random = new Random();
+        int randomNumber = random.Next(0, 4);
+        string findPrompt = prompts[randomNumber];
 
         return findPrompt;
     }
