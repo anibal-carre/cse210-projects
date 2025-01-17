@@ -49,12 +49,11 @@ class Program
                         journal.LoadFromFile(filename);
                         break;
                     case 4:
-
-                        Console.WriteLine("Option 2");
-                        journal.SaveToFile("journal.txt");
+                        Console.WriteLine("What is the filename? ");
+                        string fileName = Console.ReadLine();
+                        journal.SaveToFile(fileName);
                         break;
                     case 5:
-                        Console.WriteLine("Option 5");
                         running = false;
                         break;
                 }
