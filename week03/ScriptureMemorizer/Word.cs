@@ -26,7 +26,8 @@ public class Word
 
     public string GetDisplayText()
     {
-        return _text;
+        //I decided that the ternary operator would be a good option, I have used this operator in other programming languages ​​such as javascript, I find it very useful.
+        return _isHidden ? new string('_', _text.Length) : _text;
     }
 
 }
