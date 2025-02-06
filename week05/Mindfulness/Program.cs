@@ -4,6 +4,10 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Hello World! This is the Mindfulness Project.");
+        Activity activity = new("Program", "Working", 10);
+        activity.DisplayStartingMessage();
+        activity.ShowCountDown(10);
+        activity.ShowSpinner(10);
+        activity.DisplayEndingMessage();
     }
 }
