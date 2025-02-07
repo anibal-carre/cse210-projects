@@ -1,5 +1,7 @@
 
 
+using System.Data;
+
 public class Activity
 {
     private string _name;
@@ -25,12 +27,31 @@ public class Activity
 
     public void ShowSpinner(int seconds)
     {
-        for (int i = 0; i < seconds; i++)
+        DateTime starTime = DateTime.Now;
+        DateTime endTime = starTime.AddSeconds(seconds);
+
+        List<string> spinnerString = ["|", "/", "-", "\\", "|", "/", "-", "\\"];
+
+
+        int i = 0;
+
+        while (DateTime.Now < endTime)
         {
-            Console.Write(".");
-            Thread.Sleep(3000);
+            string s = spinnerString[i];
+            Console.Write(s);
+            Thread.Sleep(1000);
+            Console.Write("\b \b");
+
+            i++;
+
+            if (i >= spinnerString.Count)
+            {
+                i = 0;
+            }
         }
-        Console.WriteLine();
+
+        Console.WriteLine("Done!");
+
     }
 
     public void ShowCountDown(int seconds)
