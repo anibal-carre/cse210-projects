@@ -6,8 +6,8 @@ class Program
     {
         Activity activity = new("Program", "Working", 10);
         activity.DisplayStartingMessage();
-        activity.ShowCountDown(10);
-        activity.ShowSpinner(10);
+        activity.ShowCountDown(100);
+        //activity.ShowSpinner(10);
         activity.DisplayEndingMessage();
     }
 }

@@ -1,4 +1,4 @@
-using System.Runtime.CompilerServices;
+
 
 public class Activity
 {
@@ -37,12 +37,12 @@ public class Activity
     {
         for (int i = seconds; i > 0; i--)
         {
-            Console.Write($"{i}");
+            // I decided to use the following 'Escape Sequences' \r and \n because this allows me to better display the counter numbers if they have more than one or two digits. I learn about this in the Microsoft Page: https://learn.microsoft.com/en-us/cpp/c-language/escape-sequences?view=msvc-170
+            Console.Write($"\r{i} ");
             Thread.Sleep(1000);
-            Console.WriteLine("\b \b");
-
         }
-        Console.WriteLine("GO!");
+
+        Console.WriteLine("\rGO! \n");
     }
 
 }
