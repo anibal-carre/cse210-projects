@@ -27,7 +27,8 @@ class Program
             }
             else if (option == 3)
             {
-                Console.WriteLine("Listing Activity");
+                ListingActivity listingActivity = new();
+                listingActivity.Run();
             }
             else if (option == 4)
             {

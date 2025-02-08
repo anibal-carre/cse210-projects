@@ -46,6 +46,7 @@ public class BreathingActivity : Activity
         ShowCountDown(durationBreatheOut);
 
         DisplayEndingMessage();
+        ShowSpinner(5);
     }
 
 
