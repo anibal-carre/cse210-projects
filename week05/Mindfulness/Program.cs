@@ -13,5 +13,26 @@ class Program
         Menu menu = new();
         int option = menu.ShowMenu();
         Console.WriteLine(option);
+
+        if (option == 1)
+        {
+            Console.WriteLine("Breathing Activity");
+        }
+        else if (option == 2)
+        {
+            Console.WriteLine("Refelcting Activity");
+        }
+        else if (option == 3)
+        {
+            Console.WriteLine("Listing Activity");
+        }
+        else if (option == 4)
+        {
+            Console.WriteLine("Program finish");
+        }
+        else
+        {
+            Console.WriteLine("Option not valid");
+        }
     }
 }
