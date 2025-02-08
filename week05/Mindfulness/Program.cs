@@ -16,13 +16,14 @@ class Program
             if (option == 1)
             {
 
-                BreathingActivity bActivity = new();
-                bActivity.Run();
+                BreathingActivity breathingActivity = new();
+                breathingActivity.Run();
 
             }
             else if (option == 2)
             {
-                Console.WriteLine("Refelcting Activity");
+                ReflectingActivity reflectingActivity = new();
+                reflectingActivity.Run();
             }
             else if (option == 3)
             {
