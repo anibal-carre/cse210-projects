@@ -4,10 +4,14 @@ class Program
 {
     static void Main(string[] args)
     {
-        Activity activity = new("Program", "Working", 10);
-        activity.DisplayStartingMessage();
+        //Activity activity = new("Program", "Working", 10);
+        //activity.DisplayStartingMessage();
         //activity.ShowCountDown(10);
-        activity.ShowSpinner(10);
-        activity.DisplayEndingMessage();
+        //activity.ShowSpinner(10);
+        //activity.DisplayEndingMessage();
+
+        Menu menu = new();
+        int option = menu.ShowMenu();
+        Console.WriteLine(option);
     }
 }
