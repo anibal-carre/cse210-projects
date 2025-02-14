@@ -1,10 +1,5 @@
-public class EternalGoal : Goal
+public class EternalGoal(string name, string description, string points) : Goal(name, description, points)
 {
-    public EternalGoal(string name, string description, string points) : base(name, description, points)
-    {
-
-    }
-
     public override void RecordEvent()
     {
 

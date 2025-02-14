@@ -1,15 +1,8 @@
-public abstract class Goal
+public abstract class Goal(string shortName, string description, string points)
 {
-    protected string _shortName;
-    protected string _description;
-    protected string _points;
-
-    public Goal(string shortName, string description, string points)
-    {
-        _shortName = shortName;
-        _description = description;
-        _points = points;
-    }
+    protected string _shortName = shortName;
+    protected string _description = description;
+    protected string _points = points;
 
     public abstract void RecordEvent();
 
@@ -18,6 +11,11 @@ public abstract class Goal
     public virtual string GetDetailsString()
     {
         return $"{_shortName} ({_description})";
+    }
+
+    public string GetPoints()
+    {
+        return _points;
     }
 
 
